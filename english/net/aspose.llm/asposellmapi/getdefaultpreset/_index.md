@@ -3,7 +3,7 @@ title: AsposeLLMApi.GetDefaultPreset
 second_title: Aspose.LLM for .NET API Reference
 description: AsposeLLMApi method. Returns a preconfigured Qwen25Preset instance suitable as a starting point when the caller has not prepared their own preset. The returned instance is freshly constructed not shared with DefaultPreset  callers may mutate it safely
 type: docs
-weight: 70
+weight: 80
 url: /net/aspose.llm/asposellmapi/getdefaultpreset/
 ---
 ## AsposeLLMApi.GetDefaultPreset method

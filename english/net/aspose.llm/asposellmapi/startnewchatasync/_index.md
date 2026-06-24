@@ -3,7 +3,7 @@ title: AsposeLLMApi.StartNewChatAsync
 second_title: Aspose.LLM for .NET API Reference
 description: AsposeLLMApi method. Starts a new chat session. When preset is null falls back to the preset supplied at construction accessible via DefaultPreset
 type: docs
-weight: 120
+weight: 130
 url: /net/aspose.llm/asposellmapi/startnewchatasync/
 ---
 ## AsposeLLMApi.StartNewChatAsync method

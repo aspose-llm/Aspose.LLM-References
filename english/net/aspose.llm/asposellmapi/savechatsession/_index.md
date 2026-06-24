@@ -3,7 +3,7 @@ title: AsposeLLMApi.SaveChatSession
 second_title: Aspose.LLM for .NET API Reference
 description: AsposeLLMApi method. Saves a chat session to a file
 type: docs
-weight: 90
+weight: 100
 url: /net/aspose.llm/asposellmapi/savechatsession/
 ---
 ## AsposeLLMApi.SaveChatSession method

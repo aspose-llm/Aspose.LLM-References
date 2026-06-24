@@ -3,7 +3,7 @@ title: AsposeLLMApi.SendMessageAsync
 second_title: Aspose.LLM for .NET API Reference
 description: AsposeLLMApi method. Sends a user message to the current chat session creating one first if CurrentChatSessionId is empty
 type: docs
-weight: 100
+weight: 110
 url: /net/aspose.llm/asposellmapi/sendmessageasync/
 ---
 ## AsposeLLMApi.SendMessageAsync method
