@@ -1,14 +1,16 @@
 ---
 title: Class AsposeLLMApi
 second_title: Aspose.LLM for .NET API Reference
-description: Aspose.LLM.AsposeLLMApi class. Highlevel facade over Engine  the recommended entry point for consumers of the Aspose.LLM NuGet package. Handles binary deployment model loading license checks and session lifecycle from a single PresetCoreBase
+description: Aspose.LLM.AsposeLLMApi class. Highlevel facade over Engine the recommended entry point for consumers of the Aspose.LLM NuGet package. Handles binary deployment model loading license checks and session lifecycle from a single PresetCoreBase
 type: docs
 weight: 10
 url: /net/aspose.llm/asposellmapi/
 ---
 ## AsposeLLMApi class
 
-High-level facade over Engine — the recommended entry point for consumers of the Aspose.LLM NuGet package. Handles binary deployment, model loading, license checks, and session lifecycle from a single PresetCoreBase.
+High-level facade over Engine: the recommended entry point for consumers of the Aspose.LLM NuGet package. Handles binary deployment, model loading, license checks, and session lifecycle from a single PresetCoreBase.
+
+**Models.** No model is included in Aspose.LLM. The API runs a model that you choose, on your own machine; the model file is obtained separately and is governed by the model publisher's license, not the Aspose license. Verifying and complying with that license is your responsibility.
 
 **Singleton.** Only one instance may exist per process. Constructing a second `AsposeLLMApi` before disposing the first throws InvalidOperationException. This guards against double-loading the native llama.cpp runtime; the underlying libraries are not re-entrant on all platforms.
 
