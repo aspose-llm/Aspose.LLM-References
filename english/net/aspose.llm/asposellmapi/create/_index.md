@@ -29,6 +29,10 @@ New [`AsposeLLMApi`](../) instance.
 | --- | --- |
 | InvalidOperationException | Thrown when another [`AsposeLLMApi`](../) instance is already live in the process. |
 
+## Remarks
+
+The preset carries configuration only, never a model. The model file it points at is obtained separately on your machine and is governed by the model publisher's license, which you are responsible for complying with.
+
 ### See Also
 
 * class [AsposeLLMApi](../)

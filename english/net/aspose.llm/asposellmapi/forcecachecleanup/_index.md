@@ -3,7 +3,7 @@ title: AsposeLLMApi.ForceCacheCleanup
 second_title: Aspose.LLM for .NET API Reference
 description: AsposeLLMApi method. Forces cleanup of the current chat session cache using the specified strategy
 type: docs
-weight: 50
+weight: 60
 url: /net/aspose.llm/asposellmapi/forcecachecleanup/
 ---
 ## AsposeLLMApi.ForceCacheCleanup method

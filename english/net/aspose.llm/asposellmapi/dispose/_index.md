@@ -3,7 +3,7 @@ title: AsposeLLMApi.Dispose
 second_title: Aspose.LLM for .NET API Reference
 description: AsposeLLMApi method. Performs applicationdefined tasks associated with freeing releasing or resetting unmanaged resources
 type: docs
-weight: 40
+weight: 50
 url: /net/aspose.llm/asposellmapi/dispose/
 ---
 ## AsposeLLMApi.Dispose method

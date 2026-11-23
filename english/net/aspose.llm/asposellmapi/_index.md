@@ -1,14 +1,16 @@
 ---
 title: Class AsposeLLMApi
 second_title: Aspose.LLM for .NET API Reference
-description: Aspose.LLM.AsposeLLMApi class. Highlevel facade over Engine  the recommended entry point for consumers of the Aspose.LLM NuGet package. Handles binary deployment model loading license checks and session lifecycle from a single PresetCoreBase
+description: Aspose.LLM.AsposeLLMApi class. Highlevel facade over Engine the recommended entry point for consumers of the Aspose.LLM NuGet package. Handles binary deployment model loading license checks and session lifecycle from a single PresetCoreBase
 type: docs
 weight: 10
 url: /net/aspose.llm/asposellmapi/
 ---
 ## AsposeLLMApi class
 
-High-level facade over Engine — the recommended entry point for consumers of the Aspose.LLM NuGet package. Handles binary deployment, model loading, license checks, and session lifecycle from a single PresetCoreBase.
+High-level facade over Engine: the recommended entry point for consumers of the Aspose.LLM NuGet package. Handles binary deployment, model loading, license checks, and session lifecycle from a single PresetCoreBase.
+
+**Models.** No model is included in Aspose.LLM. The API runs a model that you choose, on your own machine; the model file is obtained separately and is governed by the model publisher's license, not the Aspose license. Verifying and complying with that license is your responsibility.
 
 **Singleton.** Only one instance may exist per process. Constructing a second `AsposeLLMApi` before disposing the first throws InvalidOperationException. This guards against double-loading the native llama.cpp runtime; the underlying libraries are not re-entrant on all platforms.
 
@@ -35,6 +37,7 @@ public class AsposeLLMApi : IDisposable
 | Name | Description |
 | --- | --- |
 | static [Create](../../aspose.llm/asposellmapi/create/)(PresetCoreBase, ILogger?) | Creates a new AsposeLLMApi instance using the provided preset. Equivalent to `new AsposeLLMApi(preset, logger)`; preserved for fluent / factory-style call sites. |
+| [CloseChatSession](../../aspose.llm/asposellmapi/closechatsession/)(string) | Closes a chat session and releases its native context resources. This is the per-session counterpart to disposing the whole API instance. |
 | [Dispose](../../aspose.llm/asposellmapi/dispose/)() | Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. |
 | [ForceCacheCleanup](../../aspose.llm/asposellmapi/forcecachecleanup/)(CacheCleanupStrategy) | Forces cleanup of the current chat session cache using the specified strategy. |
 | [GetDefaultParametersAsync](../../aspose.llm/asposellmapi/getdefaultparametersasync/)() | Gets the default parameter sets returned by the engine. |
@@ -44,6 +47,8 @@ public class AsposeLLMApi : IDisposable
 | [SendMessageAsync](../../aspose.llm/asposellmapi/sendmessageasync/)(string, IEnumerable&lt;byte[]&gt;?, PresetCoreBase?, CancellationToken) | Sends a user message to the current chat session, creating one first if CurrentChatSessionId is empty. |
 | [SendMessageToSessionAsync](../../aspose.llm/asposellmapi/sendmessagetosessionasync/)(string, string, IEnumerable&lt;byte[]&gt;?, CancellationToken) | Sends a message to a specific chat session and gets a response |
 | [StartNewChatAsync](../../aspose.llm/asposellmapi/startnewchatasync/)(PresetCoreBase, string) | Starts a new chat session. When *preset* is `null`, falls back to the preset supplied at construction (accessible via [`DefaultPreset`](./defaultpreset/)). |
+| static [LoadPresetFromJson](../../aspose.llm/asposellmapi/loadpresetfromjson/)(string) | Loads one preset from one inline JSON document. The JSON must contain `extends`, which selects the built-in preset that will be used as the base before applying overrides. |
+| static [SavePresetToJson](../../aspose.llm/asposellmapi/savepresettojson/)(PresetCoreBase, bool) | Exports one built-in preset instance to one inline JSON document. The output uses the same contract as [`LoadPresetFromJson`](./loadpresetfromjson/). By default it emits `extends` plus only the properties that differ from the selected built-in preset defaults. Set *includeDefaults* to `true` to export a full preset snapshot with all writable fields. |
 
 ### See Also
 

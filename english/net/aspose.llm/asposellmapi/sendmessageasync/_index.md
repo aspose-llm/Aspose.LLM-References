@@ -3,7 +3,7 @@ title: AsposeLLMApi.SendMessageAsync
 second_title: Aspose.LLM for .NET API Reference
 description: AsposeLLMApi method. Sends a user message to the current chat session creating one first if CurrentChatSessionId is empty
 type: docs
-weight: 100
+weight: 110
 url: /net/aspose.llm/asposellmapi/sendmessageasync/
 ---
 ## AsposeLLMApi.SendMessageAsync method
@@ -13,7 +13,7 @@ Sends a user message to the current chat session, creating one first if CurrentC
 When a session already exists, the *preset* argument is NOT re-applied to the existing session — the session keeps the parameters it was started with. To change parameters mid-conversation, start a new session via [`StartNewChatAsync`](../startnewchatasync/) with the desired preset and then send through [`SendMessageToSessionAsync`](../sendmessagetosessionasync/).
 
 ```csharp
-public Task<string> SendMessageAsync(string message, IEnumerable<byte[]>? media = null, 
+public Task<string> SendMessageAsync(string message, IEnumerable<byte[]>? media = null,
     PresetCoreBase? preset = null, CancellationToken cancellationToken = default)
 ```
 
@@ -40,5 +40,3 @@ Assistant response text.
 * class [AsposeLLMApi](../)
 * namespace [Aspose.LLM](../../asposellmapi/)
 * assembly [Aspose.LLM](../../../)
-
-
