@@ -3,7 +3,7 @@ title: AsposeLLMApi.SendMessageToSessionAsync
 second_title: Aspose.LLM for .NET API Reference
 description: AsposeLLMApi method. Sends a message to a specific chat session and gets a response
 type: docs
-weight: 110
+weight: 120
 url: /net/aspose.llm/asposellmapi/sendmessagetosessionasync/
 ---
 ## AsposeLLMApi.SendMessageToSessionAsync method
@@ -11,7 +11,7 @@ url: /net/aspose.llm/asposellmapi/sendmessagetosessionasync/
 Sends a message to a specific chat session and gets a response
 
 ```csharp
-public Task<string> SendMessageToSessionAsync(string sessionId, string message, 
+public Task<string> SendMessageToSessionAsync(string sessionId, string message,
     IEnumerable<byte[]>? media = null, CancellationToken cancellationToken = default)
 ```
 
@@ -31,5 +31,3 @@ Response from the chat session
 * class [AsposeLLMApi](../)
 * namespace [Aspose.LLM](../../asposellmapi/)
 * assembly [Aspose.LLM](../../../)
-
-
